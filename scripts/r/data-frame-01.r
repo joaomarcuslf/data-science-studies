@@ -1,8 +1,8 @@
-# This script will retrieve and csv file then generate two computed data row, and then save the csv again 
+# This script will retrieve and csv file then generate two computed data row, and then save the csv again
 # without computed data
 # It will create subsets based on IMC
 
-table = read.csv("../data-source/data_file.csv")
+table = read.csv("../../data-source/data_file.csv")
 table = table[,-1]
 
 table$age = 2020-table$birthyear
